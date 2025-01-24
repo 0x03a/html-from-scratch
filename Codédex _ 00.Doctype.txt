@@ -1,0 +1,9 @@
+note:
+
+<!DOcTYPE html> // full form of DOCTYPE is (Document type Declaration)
+this instruction is not a tag, it's just an declaration to show in which type of version of html page is written in, and 
+'<!DOcTYPE html>' represents that we are using html5
+
+-> if we were using html4 we must have to declare in 3 to 4 lines.
+-> if we don't write declaration editor can also be thought that it might be an older version and done changing according 
+to it. So that's why declaration of html5 is important.
