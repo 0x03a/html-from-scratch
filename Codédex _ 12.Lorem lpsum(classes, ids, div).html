@@ -1,0 +1,179 @@
+<!-- Write code below 💖 -->
+
+<!--
+
+
+# Classes and IDs
+The two attributes we'll come across most are the class and id attributes. Any element can use them. While class and id are used for labeling elements, the two have important differences.
+
+An element can be assigned multiple class values in the form of a space-separated list:
+
+<p class="first-value second-value third-value">Hello, World</p>
+
+Each element can only have one id value with no spaces. Every id value should be unique in the entire page:
+
+<p id="value">Hello, World</p>
+
+Additionally, id can be used to link to another part of the same page, such as the heading! This can be matched with an <a> anchor element's href attribute via a # hashtag symbol, followed by the identifier used for the id:
+
+<a href="#medellin">Link to Medellín</a>
+
+<h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+
+Lastly, where only one id can be assigned to a single element, a class can be assigned to many:
+
+<h2 class="city" id="medellin">Medellín 🇨🇴</h2>
+<h2 class="city" id="lisbon">Lisbon 🇵🇹</h2>
+<h2 class="city" id="bali">Bali 🇮🇩</h2>
+
+The values for the class and id attributes must always be lowercase. If their name is made of multiple words, they should be separated by dashes -.
+
+Note: A good way to remember class vs id is... there can be multiple students in a class, but each student should have an unique id. 💡
+
+# Division Element
+One of the most common ways of creating sections for a page is with the <div> element (short for "division").
+
+The <div> element is kind of like a generic container with no particular meaning. This element and the class and id attributes can go hand in hand.
+
+For example, look at this website:
+
+<div class="page-section" id="about-me">
+  <h2>About Me</h2>
+  <p>Ness is an aspiring web developer!</p>
+</div>
+
+<div class="page-section" id="social-media">
+  <h2>Social:</h2>
+  <ul>
+    <li>GitHub</li>
+    <li>Twitter</li>
+    <li>LinkedIn</li>
+  </ul>
+</div>
+
+The <div> element is used to group content and be labeled by the class and id attributes.
+
+
+
+
+
+________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+Meaning in Simple Words:
+* You name a part of your page using an id.
+* You link to that name using # and the id.
+* Clicking the link takes you straight to the named part of the page.
+This technique is often used in tables of contents etc.
+EXAMPLE:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Using ID for Page Navigation</title>
+  </head>
+  <body>
+    <!-- Navigation Links 
+
+    <a href="#section1">Go to Section 1</a> |
+    <a href="#section2">Go to Section 2</a>
+
+    <!-- Content Sections 
+    <h1 id="section1">Welcome to Section 1</h1>
+    <p>This is the first section of the page.</p>
+
+    <h1 id="section2">Welcome to Section 2</h1>
+    <p>This is the second section of the page.</p>
+  </body>
+</html>
+
+Note:
+IDs: Unique, can be linked using href="#section1".
+Classes: Non-unique, used for styling and grouping, and not suitable for direct linking like id.
+However, if you still want to simulate navigation using classes, you would need to add some JavaScript, because links with class cannot directly navigate to a section of the page like id can.
+
+
+
+
+
+
+
+
+Note:
+When both a **class** and an **id** are applied to an element, the **ID** takes higher precedence over the **class** in CSS, due to the CSS **specificity** rule.
+
+### Specificity Hierarchy:
+1. **Inline styles** (e.g., styles directly on the `style` attribute) have the highest specificity.
+2. **IDs** have higher specificity than classes.
+3. **Classes, pseudo-classes, and attribute selectors** have lower specificity than IDs.
+4. **Elements** (e.g., `div`, `h2`, `p`) have the lowest specificity.
+
+### Example:
+
+Let's say we have the following CSS for the classes and ID:
+
+#### CSS:
+```css
+.page-section {
+  background-color: lightblue;
+}
+
+#about-me {
+  background-color: yellow;
+}
+```
+
+#### HTML:
+```html
+<div class="page-section" id="about-me">
+  <h2>About Me</h2>
+  <p>Ness is an aspiring web developer!</p>
+</div>
+```
+
+### What Happens:
+- The `.page-section` class will set the background color of the `<div>` to `lightblue`.
+- The `#about-me` ID will override this because IDs have higher specificity. The background color for this `div` will be `yellow`, as defined by the `#about-me` ID selector.
+
+### Key Point:
+When multiple CSS rules apply to an element, the rule with the **highest specificity** will be followed. Since an ID has a higher specificity than a class, styles defined for the ID will override those from the class.
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+  <head> <title>classes, ids and div tag</title> </head>
+  <body>
+    <h1> Untitled </h1>
+    <a href="#heading-1"> Heading 1 </a>
+    <a href="#heading-2"> Heading 2 </a>
+    <div class="section">
+      <h2 class="heading" id="heading-1">Lorem ipsum dolor</h2> 
+        <P>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         <br> Nulla tincidunt velit id augue convallis, at sollicitudin arcu mollis.
+         <br> Sed egestas odio id justo luctus, sit amet tempor turpis ullamcorper.
+    </div>
+    
+    <div class="section">
+    <h2 class="heading" id="heading-2"> Vestibulum vestibulum </h2>
+    <p>
+      Vestibulum vestibulum turpis a ante malesuada, ac tincidunt lectus posuere.<br> Proin fringilla ante eu erat consectetur, a tincidunt tortor interdum.<br> Curabitur sit amet libero eu libero fermentum scelerisque.
+    </p>
+    <img alt="image error" src="http://www.turnwall.com/wp-content/uploads/2014/06/box-model-diagram.gif">
+    </div>
+
+
+  </body>
+

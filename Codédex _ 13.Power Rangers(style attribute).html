@@ -1,0 +1,161 @@
+<!-- Write code below 💖 -->
+
+
+<!--
+
+  # The style Attribute
+So far, the appearance of our pages has been pretty skeletal. Just some plain text with the occasional list, image, or link.
+
+But what if there were ways to improve this within our .html files? As it turns out, there are!
+
+First, we can apply a style attribute to any HTML element to stylize certain aspects of that element, such as what color the text should be:
+
+<p>
+  Roses are <span style="color:red;">red</span>.<br />
+  Violets are <span style="color:blue;">blue</span>.
+</p>
+
+This attribute uses a special syntax where a style is made of a property (i.e., color) and a value (red), separated by a : colon. Multiple styles can be applied to a single element, but they must be separated by a ; semi-colon.
+
+<p>
+  Roses are <span style="color:red; text-decoration:underline;">red</span>.<br />
+  Violets are <span style="color:blue; text-decoration:underline;">blue</span>.
+</p>
+
+The following is the rendered paragraph with our styles applied to the <span> elements:
+
+
+
+The color property sets the color for the text of an element.
+The text-decoration adds text formatting (such as underline), similar to what the <b>, <i>, <u>, and <s> elements do.
+This is actually a language called CSS, which we will learn in the next course.
+
+# The <style> Element
+Using the style attribute for a few elements is one thing. But what if we want to add styles to a bunch of different elements? Or what if we want to add the same styles to each instance of a specific element?
+
+Alternatively, the <style> element can be used in the <head> to style our elements in the <body>.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ... Styles for elements go here
+    </style>
+  </head>
+  <body>
+    ... Elements go here
+  </body>
+</html>
+
+Elements can be selected inside the <style> element using { } curly braces:
+
+<style>
+  element {
+    property: value;
+  }
+</style>
+
+Remember when we learned about the class and id attributes? Inside the <style> element, you can use a period . (class) or hashtag # (id) to select one or more specific elements that have a matching class or id, respectively:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span {
+        text-decoration: underline;
+      }
+
+      #red-word {
+        color: red;
+      }
+
+      #blue-word {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Roses are <span id="red-word">red</span>.<br />
+      Violets are <span id="blue-word">blue</span>.<br />
+    </p>
+  </body>
+</html>
+
+Instructions
+In 1993, the "Mighty Morphin’ Power Rangers" premiered on TV, fighting forces of evil. The five original rangers were each represented by a different color:
+
+❤️‍🩹 Red
+💙 Blue
+🖤 Black
+💛 Yellow
+💖 Pink
+Create a new file called power-rangers.html.
+
+Copy/paste this code in the <body> element:
+
+<div class="ranger-div" id="red-ranger"></div>
+<div class="ranger-div" id="blue-ranger"></div>
+<div class="ranger-div" id="black-ranger"></div>
+<div class="ranger-div" id="yellow-ranger"></div>
+<div class="ranger-div" id="pink-ranger"></div>
+
+Insert a <style> element in the <head>. Then, apply the following styles in the <style> element:
+
+A width of 50% and height of 100px for <div> divider elements with the ranger-div class.
+A different background-color for each <div> divider element based on their id.
+
+
+
+
+
+
+
+
+
+  -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head> 
+    <title> The Style attribute </title>
+     <!--
+          styles for elements goes here in the
+          below style tag
+          -->
+      <style>
+        .ranger-div{
+        width:50%;
+        height:100px;
+        }
+
+        #red-ranger{
+        background-color:red;
+        }
+        #blue-ranger{
+          background-color:blue;
+        }
+        #black-ranger{
+         background-color:black;
+        }
+        #yellow-ranger{
+         background-color:yellow;
+        }
+        #pink-ranger{
+         background-color:pink;
+        }
+         
+      </style>
+  </head>
+  <body>
+    <div class="ranger-div" id="red-ranger"> </div>
+    <div class="ranger-div" id="blue-ranger"></div>
+    <div class="ranger-div" id="black-ranger"></div>
+    <div class="ranger-div" id="yellow-ranger"></div>
+    <div class="ranger-div" id="pink-ranger"></div>
+  </body>
+</html>

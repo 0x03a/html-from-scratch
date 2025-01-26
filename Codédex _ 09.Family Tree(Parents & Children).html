@@ -1,0 +1,72 @@
+<!-- Write code below 💖 -->
+<!--
+# Parents & Children
+The elements in our HTML file are arranged much like a family tree. Most individual elements can be parents with one or more child elements.
+
+For example:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+  </head>
+  <body>
+    <p>Well, <i>howdy</i> <u>there!</u></p> 
+  </body>
+</html>
+
+
+Here are some relationships:
+
+<head> and <body> are children of <html>.
+<title> is the child of <head>.
+<i> is child of <p> and grandchild of <body>.
+<i> and <u> are siblings because they belongs to same
+parent.
+
+
+# Siblings
+Elements can also be siblings if they share a direct parent element. Take this unordered list, for instance:
+
+<body>
+  <ul>
+    <li>🍄 Mario</li>
+    <li>🐢 Luigi</li>
+  </ul>
+</body>
+
+The two <li> elements are siblings because both are children of the same parent, the <ul> element.
+
+Instructions
+"The apple doesn't fall far from the tree."
+
+Create a family_tree.html file for your family using list elements such as <ul> and <li> elements. 👨‍👩‍👧‍👦
+
+If you are stuck, try doing one for the British Royal Family, the Kardashians, the Starks, or the Simpsons.
+
+Once you are done, ask yourself:
+
+Which elements are parents?
+Which elements are children?
+Which elements are siblings?
+Note: Set up your web page properly with <!DOCTYPE html>, <html>, etc.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head> 
+     <title> FAMILY TREE </title>
+  </head>
+  <body>
+     <uL>
+       <li> <b>ul</b> is a child of <b>body</b>. </li>
+       <li> <b>li</b> is child of <b>ul</b> and grandchild of <b>body</b>.</li>
+       <ol>
+         <li>Now <b>ol</b> is a child of <b>ul</b> and Grandchild of <b>body</b>.</li>
+         <li> li in <b>ol</b> is a child of <b>ol</b> and grandchild of <b>ul</b> and grand grand child of <b>body</b>.</li>
+         <li> Now in <b>ul</b> the two <b>li</b> and <b>ol</b> are siblings.</li>
+      </ol>
+    </ul> 
+  </body>
+
+</html>

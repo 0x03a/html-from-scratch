@@ -1,0 +1,97 @@
+<!-- Write code below 💖 -->
+
+<!--
+# Attributes
+Attributes are additional settings that we can use to customize an element.
+
+They are usually name/value pairs, like name="value", where the name and value are separated by an equals sign:
+
+<element name="value">Content</element>
+
+The name indicates the attribute we are setting for our element.
+The "value" for our attribute is surrounded by " double quotes.
+For example, by default, the <ol> ordered list element uses numbers to label its <li> list item elements.
+
+<ol>
+  <li>Power ⚡</li>
+  <li>Courage 🔥</li>
+  <li>Wisdom 🦉</li>
+</ol>
+
+
+
+If we want to use lowercase letters instead:
+
+<ol type="a">
+  <li>Power ⚡</li>
+  <li>Courage 🔥</li>
+  <li>Wisdom 🦉</li>
+</ol>
+
+
+
+Or, if want to use Roman numerals:
+
+<ol type="i">
+  <li>Power ⚡</li>
+  <li>Courage 🔥</li>
+  <li>Wisdom 🦉</li>
+</ol>
+
+
+
+## Attributes in Image Tag
+Guess what? We've already been using a few different attributes in the course. Remember when we learned about images?
+
+<img src="https://www.codedex.io/images/tier1.png">
+
+The <img> element uses the src attribute to specify the file path of an image.
+
+And remember that width="250" attribute from the previous exercise? Yup! That was an attribute that sets the width of the image.
+
+In addition to src, we can also use the alt attribute to make our images more accessible.
+
+<img alt="pixel girl using a laptop" src="https://www.codedex.io/images/tier1.png">
+
+If our image can't appear for some reason, the alt text is displayed instead! This allows assistive devices to read our text and describe the image. 🦻🏻
+
+## Attribute in Anchor Tag
+We also came across attributes when learning about using links with <a> anchor tags:
+
+<a href="https://www.codedex.io/">Codédex</a>
+
+The href attribute is where we add a URL that can be visited when the hyperlinked text is clicked.
+
+We can also use the target attribute and set it to "_blank" to make the link open in a new browser tab:
+
+<a href="https://www.codedex.io/" target="_blank">Codédex</a>
+
+Instructions
+You’ve been asked to write a Wikipedia article about one of your heroes (dead or alive).
+
+Create a wiki_article.html file that mimics their wiki profile.
+
+Make sure to include the following:
+
+One heading that says "Biography".
+An image of that person that includes alternative text.
+One paragraph with at least 2 sentences.
+One link in the text (opens on a new tab).
+Bonus: How can we adjust the size of the image using attributes? How can we make the image a hyperlink?
+
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <title> ATTRIBUTES </title>
+  </head>
+<body>
+  <h1> BIOGRAPHY </h1>
+  <img alt="Picture error" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAe9NZZk7nUE_anJir2Scf7tsqMHRdEpCbJg&s" height=150px width=200px>
+  <p> Hi I am John. I am a soft enjineer working at Google.<br>
+   <b>Note:</b> <br> "Consistency is the only key for success". </br>
+    Here is the link of google website: <a href="https://sites.google.com/u/0/?authuser=0&tgif=d" target="_blank">Google</a>
+  </p>
+</body>
+</html>
