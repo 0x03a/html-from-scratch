@@ -1,0 +1,166 @@
+<!-- Write code below 💖 -->
+
+
+<!-- 
+  # Input Type: Number
+There may be times when numbers may be involved in forms. This could be anything from a person's age to the number of items bought at a store.
+
+To prompt the <input> element for numbers, we do the following:
+
+<input type="number">
+
+Try it out! Type a number in the bow below:
+
+
+When the cursor hovers above this input, "up" and "down" arrow buttons appear on the right side.
+
+By default, selecting these buttons moves the numeric value up or down by 1. However, a step attribute can be used to change this:
+
+<input type="number" step="2">
+
+This renders the following:
+
+
+So instead of the input value going up or down by 1, it goes up or down by 2.
+
+Additionally, a max and min attribute can be used to set how high or low this input can go:
+
+<input type="number" min="1" max="42">
+
+This is the rendered output:
+
+
+# Input Type: Checkbox and Radio
+There are also input types that allow us to make one or more choices from a list of options. Two of them are "checkbox" and "radio".
+
+The "checkbox" type renders as a box that is ticked off to mark the input as "finished" or "complete."
+
+<h3>Favorite Movie Genres</h3>
+<input type="checkbox"> Action<br>
+<input type="checkbox"> Sci-Fi<br>
+<input type="checkbox"> Rom-Com<br>
+<input type="checkbox"> K-Drama<br>
+<input type="checkbox"> Documentary<br>
+
+The code above renders this:
+
+
+
+We can check off multiple items with this input type.
+
+Next, there's the "radio" button type. Like with checkboxes, radio buttons are lists of options. However, only one option can be selected.
+
+Here's an example that highlights a recent popular illusion:
+
+<h3>Which do you think?</h3>
+<input type="radio"> Yanny
+<br>
+<input type="radio"> Laurel
+
+This is what the rendered inputs look like:
+
+
+
+Wait a second... it can't be both "Yanny" and "Laurel", right? Shouldn't only one option be selected at a time?
+
+The way to make this so is by assigning a matching name attribute to each "radio" input type. This puts them in the same group of options to choose from.
+
+<h3>Which do you think?</h3>
+<input type="radio" name="option"> Yanny
+<br>
+<input type="radio" name="option"> Laurel
+
+The output should now work as expected:
+
+
+
+Instructions
+Let's use these new inputs to write an RSVP for a special occasion! 🎈
+
+Create a new file called rsvp.html.
+
+Copy/paste the following code:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RSVP</title>
+  </head>
+  <body>
+    <form>
+      <!-- Form code here --
+    </form>
+  </body>
+</html>
+
+Next, replace the comment in the <body> with the following <form> element.
+
+Then, paste the following in between the <form> tags:
+
+<form>
+  <h2>RSVP</h2>
+  <p>Come and make our special day more awesome!</p>
+  <br>
+  First Name: <!-- Text input here --
+  <br><br>
+  Last Name: <!-- Text input here --
+  <br><br>
+  Are you coming?<br>
+  <!-- 3 radio inputs here --
+  <br><br>
+  Any dietary restrictions for main course?<br>
+  <!-- 3 or 5 checkbox inputs here --
+  <br><br>
+  <!-- Submit input here 
+ </form>
+
+Replace the comments with the following <input> elements, using the appropriate type attributes:
+
+Two text inputs for the first and last name.
+Three radio buttons labeled as "Yes", "No", and "Maybe" (with a matching name of "invite").
+Either three or five checkbox options to specify dietary restrictions like "Vegetarian" and "Gluten-free".
+An input to submit the form.
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <title> RSVP </title>
+</head>
+<body>
+  <form action="" method="">
+    <!-- form code goes here-->
+    <h2> RSVP </h2>
+    <p>Come and make our special day more awesome!</p>
+    <br>
+    First Name: <input type="text">
+    <br><br>
+    Last Name: <input type="text">
+    <br><br>
+    Are you coming?<br>
+    <input type="radio" name="optional"> Yes
+    <input Type="radio" name="optional"> No
+    <input type="radio" name="optional"> Maybe
+    <br><br>
+    Any dietary restrictions for main course?<br>
+    <input type="checkbox"> Vegetarian
+    <input type="checkbox"> Non-Vegetarin
+    <input type="checkbox"> Gluten-free
+    <br><br>
+    <input type="submit">
+    
+  </form>
+</body>
+</html>
