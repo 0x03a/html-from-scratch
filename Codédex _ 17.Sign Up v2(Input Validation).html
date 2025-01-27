@@ -1,0 +1,128 @@
+<!-- Write code below 💖 -->
+
+
+
+
+<!--
+
+   code:
+      <form method="dialog">
+  Name: <input type="text" required>
+  <br><br>
+  Favorite Color: <input type="text">
+  <input type="submit">
+</form>
+
+
+
+Explanation of the code:
+
+   A simple dialog in the context of <form method="dialog"> is an interactive form that works inside a native HTML <dialog> element. When paired with method="dialog", it allows a quick and lightweight way to capture or confirm user input in a modal-like popup.
+
+Here's what happens with your example:
+
+Key Features of the Simple Dialog:
+Works Inside a <dialog>:
+The form must be enclosed in a <dialog> element to function as a dialog box.
+
+Purpose of method="dialog":
+It simplifies capturing user interaction with the form.
+The form’s submit button closes the dialog and returns the form's input values.
+
+Automatically Closes on Submission:
+Once the user fills the form and clicks "Submit," the dialog box closes by itself.
+
+Easy Value Retrieval:
+The returned values (via dialog.returnValue) can be accessed in JavaScript for further use.
+
+
+
+
+
+  --->
+
+
+
+
+
+
+
+  <!--
+
+  
+  # Input Validation
+By now, we've explored different types of inputs for HTML forms.
+
+But how do we make sure that the right data is going into the form? For example, if a form asks for an email, how can it tell that the input is a valid email that includes the @ symbol?
+
+HTML forms actually have a few tools for this!
+
+For example, the "email" type checks if the submitted input is a valid email address:
+
+
+
+Forms can also mask text input if the <input> element has a "password" type. We can even give it a minlength and maxlength attribute to further validate the input:
+
+<input type="password" minlength="4" maxlength="10">
+
+If we render this:
+
+
+
+We also can't type past 10 characters (via maxlength) and a message appears if we submit less than 4 characters.
+
+# Required Data
+Oftentimes, forms need input in order to be submitted.
+
+The required attribute can be applied to one or more form inputs to enforce this.
+
+<form method="dialog">
+  Name: <input type="text" required>
+  <br><br>
+  Favorite Color: <input type="text">
+  <input type="submit">
+</form>
+
+The<input> element for a "Name" is marked with the required attribute.
+
+Here is what happens when submitting without filling out this input:
+
+
+
+Instructions
+Let's add some form validation to the sign_up.html file we created in the last exercise.
+
+Make the <input> elements for the username, email, and password required.
+Give the username and password inputs a minlength of "4" and a maxlength of "10".
+After finishing, try to submit the form with incomplete or incorrect inputs.
+
+
+-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Sign up V2 </title>
+  </head>
+<body>
+
+  <form action="" method="dialog">
+    <h2> Sign Up </h2>
+   Name: <input type="text" required>
+   <br><br>
+   Email: <input type="email" required>
+   <br><br>
+   Password: <input type="password" minlength="4" maxlength="10" required>
+  <br><br>
+  <input type="submit">
+ 
+  </form>
+
+
+</body>
+</html>
