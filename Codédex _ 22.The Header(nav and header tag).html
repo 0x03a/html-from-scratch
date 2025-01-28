@@ -1,0 +1,93 @@
+<!-- Write code below 💖 -->
+
+
+<!--
+  # The Header
+When you visit most sites nowadays, you may notice they have a space near the top for information like the following:
+
+The website logo.
+The title of the site.
+A search bar.
+Some links to other parts of the site.
+A button to sign in.
+Even Codédex uses a header for its site!
+
+Codédex Header
+
+This space is known as the header of the site. The element we use for that is the <header> element:
+
+<body>
+  <header>
+    <h1>Welcome to My Site!</h1>
+  </header>
+</body>
+
+The <header> element always goes in the <body> element. It usually contains a heading element (<h1>-<h6>).
+
+Note: This is not to be confused with the <head> element that exists outside the <body> element.
+
+# Navigation
+Again, the header of a page usually features links for navigating to other places within the site.
+
+The semantic element used for this is the <nav> element. This usually goes inside of a <header> element.
+
+Here is an example:
+
+<header>
+  <nav>
+    <!-- Links go here --
+  </nav>
+</header>
+
+The <nav> element may contain ordered lists, unordered lists, or a combination of both.
+
+Instructions
+In this chapter, we're going to gradually build a simple blog page in each exercise, using semantic elements.
+
+Let's start by creating the header and navigation from the top of the page!
+
+Create a new file called my_blog.html.
+
+Next, copy/paste the following markup:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><!-- Title of blog here --  </title>
+  </head>
+  <body>
+    <!-- Header and nav list go here --
+  </body>
+</html>
+
+Then, replace the comments with the following information:
+
+The title of your blog (in the <title> element).
+An <h1> heading element for your blog, featuring its title.
+An unordered list of 2 links; one for "About" and one for "Stories".
+Note: Don't forget to save your file before moving forward!
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codedex</title> <!-- The title of your blog -->
+</head>
+<body>
+    <header>
+        <h1>Codedex</h1> <!-- Blog's title in an <h1> heading -->
+        <nav>
+            <ul> <!-- Unordered list containing the links -->
+                <li><a href="https://www.google.com/search?q=site%3Ahello" target="_blank">About</a></li>
+                <li><a href="https://www.google.com/search?q=site+map" target="_blank">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+

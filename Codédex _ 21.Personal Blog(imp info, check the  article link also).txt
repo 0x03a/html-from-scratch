@@ -1,0 +1,26 @@
+# HTML5
+Great job on reaching the final chapter of the HTML course!
+
+We are going to revisit HTML structure, but from a different angle. Much like the underpinning of a house, semantic HTML elements improve the foundation of any web page!
+
+HTML5 is the version of HTML we use today. Prior to its release in 2008, it was less easy to tell the purpose or meaning of the different elements of a web page.
+
+When programming in HTML, the markup should make sense to both the programmer and the browser itself.
+
+# Semantic Elements
+Thus far, we've used elements like <div> and <span> to structure content. But neither of these elements convey meaning to either the programmer or the browser.
+
+One of the goals of HTML5 is to upgrade the structure with new semantic elements that provide the following benefits:
+
+They can be engaged with and accessed by a wider range of users, such as ones who use screen readers.
+The content within these elements are more discoverable for users through places like search engines.
+The actual HTML code becomes cleaner and easier for programmers to read and maintain.
+Instructions
+For this chapter, we will build our very own blog website, step by step, using semantic elements!
+
+But first, like we did in a bonus article, let's use the browser's developer tools to inspect MDN's article about semantics to observe semantic elements in action!
+
+Which ones can you find?
+
+Google Chrome: Right-click and go to "Inspect". Click the pointer-icon icon in the top-left corner of the dev tools and hover over an element in the page to inspect it.
+Safari: Click "Safari", then "Preferences". Go to the "Advanced" tab and click "Show Develop menu in menu bar". Now click "Develop" and then "Show Web Inspector".
