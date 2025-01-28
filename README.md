@@ -11,4 +11,4 @@ To view the code of the files, simply:
 ### Codedex  
 
 
-[![CodeDex](https://github.com/user-attachments/assets/802a0586-d145-49be-89a5-8f5bae081331)](https://www.codedex.io/@0x03a)
+[![CodeDex](https://github.com/user-attachments/assets/802a0586-d145-49be-89a5-8f5bae081331)](https://www.codedex.io)
