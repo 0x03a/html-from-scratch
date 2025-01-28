@@ -10,4 +10,4 @@ To view the code of the files, simply:
 
 ### Codedex  
 
-[![Codedex](https://private-user-images.githubusercontent.com/172851868/406113275-802a0586-d145-49be-89a5-8f5bae081331.png)](https://www.codedex.io/)
+[![Codedex](images/406110864-20e13869-ece0-464f-99c6-c99b617f79ab.png)](https://www.codedex.io/)
