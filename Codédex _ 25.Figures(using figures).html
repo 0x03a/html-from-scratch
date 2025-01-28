@@ -1,0 +1,166 @@
+<!-- Write code below 💖 -->
+
+
+<!--
+
+# Using Figures
+So far, we've explored semantic elements that focus on structure and/or text. But what about images? Or even code blocks?
+
+There are semantic elements for those as well!
+
+The first one is the <figure> element. A "figure" is usually a graphic, image, or diagram.
+
+<figure>
+  <!-- Figure content goes here --
+</figure>
+
+While the contents in a <figure> element are grouped together, they can be placed either in the page's main content or somewhere else.
+
+# Captioning Figures
+Supportive text, or captions, are another way to add semantic meaning to figures in our pages.
+
+The <figcaption> element is used to describe what is in the <figure> element.
+
+We can use it for something simple, like a single image:
+
+<figure>
+  <img
+    width="500"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/1024px-Tsunami_by_hokusai_19th_century.jpg"
+    alt="Great Wave off Kanagawa by Hokusai"
+  />
+  <figcaption>The Great Wave Off Kanagawa by Hokusai</figcaption>
+</figure>
+
+The rendered figure looks like this:
+
+
+
+We can also use the <figcaption> element to describe multiple pieces of content within the <figure> element:
+
+<figure style="margin:0;display:inline;">
+  <img
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/250px-Brooklyn_Bridge_Manhattan.jpg"
+    alt="Brooklyn Bridge"
+  />
+  <img
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg"
+    alt="Prosepct Park, Brooklyn, NY, USA"
+  />
+  <img 
+    width="150"
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg/1024px-Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg"
+    alt="Coney Island, Brooklyn, NY, USA" 
+  />
+  <figcaption>Notable Brooklyn spots (from left to right): Brooklyn Bridge; Prospect Park; Coney Island</figcaption>
+</figure>
+
+This renders the following:
+
+
+
+Let's add some images for our blog posts!
+
+Instructions
+Open the my_blog.html file.
+
+Inside the <article> elements we made in the last exercise, add a <figure> element with the following:
+
+An <img> image element that goes with a blog post. Make sure to include alt text.
+A <figcaption> element that renders text that describes the image above it.
+Bonus: Try rewriting the <figure> and <figcaption> elements with more than one image.
+
+
+
+
+
+Note:
+   
+   Default Behavior of <figure>
+<figure> is a block-level element by default.
+It normally starts on a new line and takes up the full width of its parent container.
+Effect of display: inline;
+
+With display: inline;, the <figure>:
+No longer forces a new line.
+Only takes up as much horizontal space as its content (e.g., the image and caption).
+Can be placed next to other inline or inline-block elements.
+
+
+
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Sections</title>
+</head>
+<body>
+<header>
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#stories-section">Stories</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+<section>
+    <h2> About</h2>
+    <article>
+        I am Inshal. I am currently pursuring my computer Science degree from FAST.
+        Happy to share it with you all.
+    </article>
+</section>
+<section>
+    <h2> Stories</h2>
+    <article>
+        <h3>Blog-Inspired Story:</h3>
+       <p> After writing her 100th blog post, she realized the stories she shared had touched lives across the globe.</p>
+       <figure style="margin:0;display:inline;">
+         <img 
+             width="150"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/250px-Brooklyn_Bridge_Manhattan.jpg"
+             alt="Page error"
+         >
+         <figcaption style="margin-left: 50px">figure1</figurecaption>
+
+    </article>
+    <article>
+        <h3>News-Inspired Story:</h3>
+    <p>The headlines read "City's Oldest Tree Falls," but to her, it felt like losing an old friend.</p>
+    <figure style="margin:0;">
+        <img
+        width="150"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Prospect_Park_New_York_October_2015_003.jpg/1024px-Prospect_Park_New_York_October_2015_003.jpg"
+        alt="Page error"
+        >
+        <br>
+        <figcaption style="margin-left: 50px">figure2</figcaption>
+      </figure>
+    </article>
+    <article>
+        <h3>Forum-Inspired Story:</h3>
+    </p> He posted a question on a random forum, and ten years later, he met his best friend because of it.</p>
+    <figure style="margin:0;display:inline">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg/1024px-Coney_Island_beach_and_amusement_parks_%28June_2016%29.jpg"
+      width="150" alt="page error">
+      <figcaption style="margin-left:50px">figure3</figcaption>
+    </article>
+</section>
+</main>
+  <footer>
+      <ul>
+        <li>Codédex Daily © 2023</li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </footer>
+</body>
+</html>

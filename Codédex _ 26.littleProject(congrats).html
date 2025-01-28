@@ -1,0 +1,300 @@
+
+<!--
+
+
+# Congrats!
+Woohoo! You've reached the end of the final chapter! 🎊
+
+Here is a summary of what we learned in this chapter:
+
+The advent of semantic elements in HTML5.
+The <header> and <nav> elements.
+The <main> and <section> elements.
+The <article> element.
+The <figure> and <figcaption> elements.
+The <footer> element.
+Here is what these elements look like together:
+
+<body>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section>
+      <article>
+        <figure>
+          <figcaption></figcaption>
+        </figure>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+</body>
+
+Instructions
+By this point, we've used a majority of the semantic HTML elements to build our blog.
+
+Let's do a few things to style it better.
+
+First, in between each <article> element:
+
+Add a <br/> line break element.
+Then, add a <hr/> horizontal line element.
+Add a style attribute to the <hr> element and set its width to 95%.
+Add another <br/> line break element.
+Next, copy/paste the following <style> element in the <head> element of the file:
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  hr {
+    width: 95%;
+    margin: auto;
+  }
+</style>
+
+Go ahead and save the my_blog.html file and rerender the page to what it now looks like.
+
+Feel free to share your new blog on Twitter!
+
+Bonus: Feel free to experiment and add more styles or elements to your new blog. ✨
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+Code:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+      
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f7f7; /* Light background */
+}
+
+header {
+  background-color: #34495E; /* Dark blue background */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #E67E22; /* Vibrant orange for the header title */
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+  color: #ECF0F1; /* Lighter text for the paragraph */
+}
+
+#navigation bar {
+  margin-top: 15px;
+}
+
+#listing {
+  list-style: none;
+  text-align: center;
+}
+
+#listing li {
+  display: inline;
+  margin-right: 15px;
+}
+
+#listing li a {
+  text-decoration: none;
+  color: #ECF0F1; /* Light text color for links */
+  font-size: 1.1em;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#listing li a:hover {
+  background-color: #E67E22; /* Orange hover background */
+  color: white;
+}
+
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 0;
+  border-top: 2px solid #E67E22; /* Orange color for the separator line */
+}
+
+#smallp {
+  font-weight: 200;
+  color:#f7f7f7;
+  margin-bottom: 20px;
+}
+
+#introHeading {
+  font-size: 2em;
+  color: #34495E; /* Dark blue for intro headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#intro {
+  font-size: 1.2em;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+article h4 {
+  font-size: 2em;
+  color: #2C3E50; /* Dark color for article heading */
+  margin-bottom: 20px;
+}
+
+#detail {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  color: #777;
+}
+
+#smallinfo {
+  font-size: 1.1em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #34495E; /* Dark blue for the footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #E67E22; /* Orange hover effect for footer links */
+}
+
+#info_Of_links {
+  font-size: 1em;
+  color: #bbb;
+  margin-top: 20px;
+  font-style: italic;
+}
+img{
+    margin-left: 39%;
+}
+
+    </style>
+   
+    
+</head>
+<body>
+    <header>
+      <h1 id="heading"> Implementation of Algorihtms!</h1>
+      <br>
+      <p id="smallp" > As technology is growing day by day, students must focus on how to implement the algorihtms.</p>
+        <nav id="navigation bar">
+            <ul id="listing">
+                <li><a href="" alt>Home</a></li>
+                <li><a href="" alt>About</a></li>
+                <li><a href="" alt>Blog</a></li>
+                <li><a href="" alt>Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <br>
+           <h3 id="introHeading">Introduction to Algorithms:</h3>
+             <p id="intro">In this section, we’ll explore what algorithms are and why they are vital in the field of technology.<br> Understanding algorithms is key to solving complex problems and driving innovations.</p>
+            <article>
+                <br><br>
+                <h4 id="importance">Why Algorithms Matter in Today's World!</h4>
+                <p id="detail">Algorithms are behind nearly everything we do in the digital world. From search engines to social<br>media recommendations, algorithms power systems that make decisions, predict outcomes, and<br> solve problems. </p>
+                <figure style="margin:0;display:inline;">
+                    <br>
+                    <p id="smallinfo"> A visual representation, such as a diagram, can illustrate how algorithms simplify decision-making processes.</p>
+                    <img src="https://webhostinggeeks.com/blog/wp-content/uploads/2023/08/Dijkstra-Algorithm-980x619-optimized.png" width="350" alt="img error" >
+                    <figcaption>Figure 1: Algorithm Process Simplified</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+    <footer>
+     <h4>Links:</h4>
+      <ul>
+        <li><a href="" alt>Privacy Policy</a></li>
+                <li><a href="" alt>Terms of Service</a></li>
+                <li><a href="" alt>About us</a></li>
+                <br>
+                 <p id="info_Of_links">(These links provide legal and informational details to readers about the website's policies.)</p>
+              
+      </ul>
+    </footer>
+</body>
+</html>

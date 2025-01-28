@@ -1,0 +1,122 @@
+<!-- Write code below 💖 -->
+
+
+<!--
+
+
+# Page Sections
+Within the main section of a page are smaller, separate parts. The element we use for this is… you guessed it! The <section> element!
+
+We use the <section> element to group pieces of related content together.
+
+<main>
+  <section>
+    <h2>Section A</h2>
+  </section>
+  <section>
+    <h2>Section B</h2>
+  </section>
+  <section>
+    <h2>Section C</h2>
+  </section>
+</main>
+
+Note: Unlike the <main> element, a page can have multiple <section> elements!
+
+In many cases, it makes sense for a heading element (<h1>-<h6>) to be the first child of a <section> element.
+
+We want to explicitly display what each section in the page is about.
+
+# Single Articles
+Semantic content goes one layer further!
+
+While the <section> element groups together pieces of related content, we use the <article> element for those singular pieces of content.
+
+The <article> element is used like so:
+
+<section>
+  <h2>Section Heading</h2>
+  <article>
+    <h3>Article Heading</h3>
+    Piece of content
+  </article>
+</section>
+
+The rendered code should look like this:
+
+
+While not required, an <article> element should begin with a heading element (much like with a <section> element).
+
+You can also nest an <article> within another <article> element. This is usually done if there is a piece of standalone markup within a single piece of content (e.g., a single comment from a single blog post).
+
+Instructions
+Now, we're going to add some structure inside of the <main> element of our blog page.
+
+In the my_blog.html file, let's do the following:
+
+Insert two <section> elements, each with an <h2> heading element for "About" and "Stories".
+Place an <article> element in the "About" section and write a 2-3 sentence bio of you, the blogger.
+Place 2-3 <article> elements in the "Stories" section. Each one represents a single blog post.
+Feel free to be creative with the content of each post, but make sure to include an <h3> heading title and a <p> paragraph element of 2-3 sentences.
+
+
+  -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Sections</title>
+</head>
+<body>
+<header>
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#stories-section">Stories</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+<section>
+    <h2> About</h2>
+    <article>
+        I am Inshal. I am currently pursuring my computer Science degree from FAST.
+        Happy to share it with you all.
+    </article>
+</section>
+<section>
+    <h2> Stories</h2>
+    <article>
+        <h3>Blog-Inspired Story:</h3>
+       <p> After writing her 100th blog post, she realized the stories she shared had touched lives across the globe.</p>
+    </article>
+    <article>
+        <h3>News-Inspired Story:</h3>
+    <p>The headlines read "City's Oldest Tree Falls," but to her, it felt like losing an old friend.</p>
+    </article>
+    <article>
+        <h3>Forum-Inspired Story:</h3>
+    </p> He posted a question on a random forum, and ten years later, he met his best friend because of it.</p>
+    </article>
+</section>
+</main>
+  <footer>
+      <ul>
+        <li>Codédex Daily © 2023</li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </footer>
+</body>
+</html>
